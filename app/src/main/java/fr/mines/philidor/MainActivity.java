@@ -8,6 +8,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Locale;
+
 import fr.mines.philidor.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,5 +27,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        afficherCreativite(binding.creativite.getValue());
+        binding.creativite.addOnChangeListener(
+                (slider, valeur, parUtilisateur) -> afficherCreativite(valeur));
+    }
+
+    private void afficherCreativite(float valeur) {
+        binding.valeurCreativite.setText(String.format(Locale.getDefault(), "%.1f", valeur));
     }
 }
