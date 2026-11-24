@@ -21,9 +21,11 @@
 
     <com.google.android.material.button.MaterialButtonToggleGroup
     android:id="@+id/couleur"
-    android:layout_width="wrap_content"
+    android:layout_width="0dp"
     android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="24dp"
     app:singleSelection="true"
     app:selectionRequired="true"
     app:checkedButton="@id/blancs"
@@ -32,18 +34,21 @@
     app:layout_constraintEnd_toEndOf="parent">
 <Button android:id="@+id/blancs"
 style="?attr/materialButtonOutlinedStyle"
-android:layout_width="wrap_content"
+android:layout_width="0dp"
 android:layout_height="wrap_content"
+android:layout_weight="1"
 android:text="@string/blancs" />
 <Button android:id="@+id/noirs"
     style="?attr/materialButtonOutlinedStyle"
-    android:layout_width="wrap_content"
+    android:layout_width="0dp"
     android:layout_height="wrap_content"
+    android:layout_weight="1"
     android:text="@string/noirs" />
 <Button android:id="@+id/hasard"
     style="?attr/materialButtonOutlinedStyle"
-    android:layout_width="wrap_content"
+    android:layout_width="0dp"
     android:layout_height="wrap_content"
+    android:layout_weight="1"
     android:text="@string/hasard" />
 
     </com.google.android.material.button.MaterialButtonToggleGroup>
@@ -125,6 +130,7 @@ android:text="@string/blancs" />
 
     <com.google.android.material.slider.Slider
         android:id="@+id/creativite"
+        style="@style/Widget.Material3.Slider.Legacy"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -133,6 +139,7 @@ android:text="@string/blancs" />
         android:value="0.6"
         android:valueFrom="0.0"
         android:valueTo="1.5"
+        app:tickVisible="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/libelle_creativite"
         app:layout_constraintHorizontal_bias="0.0"

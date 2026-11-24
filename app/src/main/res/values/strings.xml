@@ -11,4 +11,32 @@
     <string name="surprenant">surprenant</string>
     <string name="nouvelle_partie">Nouvelle partie</string>
     <string name="historique_parties">Historique des parties</string>
+    <string name="couleur_choisie">Couleur : %1$s</string>
+    <string name="creativite_choisie">Créativité : %1$s</string>
+    <string name="historique">Historique</string>
+    <string name="aucune_partie">Aucune partie jouée</string>
+    <string name="lancer_partie">Lancez une partie depuis l\'accueil.</string>
+    <string name="tour">\u265C</string>
+    <string name="victoire">Victoire</string>
+    <string name="defaite">Défaite</string>
+    <string name="nulle">Nulle</string>
+    <string name="initiale_victoire">V</string>
+    <string name="initiale_defaite">D</string>
+    <string name="initiale_nulle">N</string>
+    <string name="fin_mat">mat</string>
+    <string name="fin_pat">pat</string>
+    <string name="fin_nulle">nulle</string>
+    <string name="fin_abandon">abandon</string>
+    <string name="roi_blanc">\u2654</string>
+    <string name="roi_noir">\u265A</string>
+    <string name="resultat_couleur">%1$s · %2$s</string>
+    <string name="details_partie">%1$s · %2$s · %3$s</string>
+    <string name="supprimer_titre">Supprimer la partie ?</string>
+    <string name="supprimer_message">Cette partie sera retirée de l\'historique.</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="annuler">Annuler</string>
+    <plurals name="nb_coups">
+        <item quantity="one">%d coup</item>
+        <item quantity="other">%d coups</item>
+    </plurals>
 </resources>
