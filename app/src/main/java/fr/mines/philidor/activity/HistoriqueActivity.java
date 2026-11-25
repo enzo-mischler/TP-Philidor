@@ -1,4 +1,4 @@
-package fr.mines.philidor;
+package fr.mines.philidor.activity;
 
 import android.os.Bundle;
 
@@ -14,7 +14,10 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import fr.mines.philidor.R;
+import fr.mines.philidor.adapter.PartieJoueeAdapter;
 import fr.mines.philidor.databinding.ActivityHistoriqueBinding;
+import fr.mines.philidor.model.PartieJouee;
 
 public class HistoriqueActivity extends AppCompatActivity {
 
@@ -56,7 +59,6 @@ public class HistoriqueActivity extends AppCompatActivity {
                 .show();
     }
 
-    // Parties inventées en attendant les vraies (partie 5), de la plus récente à la plus ancienne
     private List<PartieJouee> partiesInventees() {
         long maintenant = System.currentTimeMillis();
         Date aujourdhui = new Date(maintenant);

@@ -1,4 +1,4 @@
-package fr.mines.philidor;
+package fr.mines.philidor.model;
 
 import java.util.Date;
 

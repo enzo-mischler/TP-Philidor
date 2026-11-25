@@ -5,27 +5,124 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PartieActivity">
+    tools:context=".activity.PartieActivity">
 
-    <TextView
-        android:id="@+id/couleur_choisie"
-        style="@style/TexteLibelle"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/bandeau_haut"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Couleur : Blancs" />
-
-    <TextView
-        android:id="@+id/creativite_choisie"
-        style="@style/TexteLibelle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="@id/couleur_choisie"
-        app:layout_constraintTop_toBottomOf="@id/couleur_choisie"
-        tools:text="Créativité : 0,6" />
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bandeau"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/TexteLibelle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titre_accueil" />
+
+        <TextView
+            android:id="@+id/camp_haut"
+            style="@style/TextePetit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Noirs · créativité 0,6" />
+    </LinearLayout>
+
+    <fr.mines.philidor.view.EchiquierView
+        android:id="@+id/echiquier"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bandeau_haut" />
+
+    <LinearLayout
+        android:id="@+id/bandeau_bas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bandeau_joueur"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/echiquier">
+
+        <TextView
+            style="@style/TexteLibelle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vous" />
+
+        <TextView
+            android:id="@+id/camp_bas"
+            style="@style/TextePetit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Blancs" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statut"
+        style="@style/TexteLibelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/vert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bandeau_bas"
+        tools:text="Aux Blancs de jouer" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bandeau"
+        app:layout_constraintBottom_toTopOf="@id/annuler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statut">
+
+        <TextView
+            android:id="@+id/coups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            tools:text="1. e4 e5 2. Nf3 Nc6" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/annuler"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/annuler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

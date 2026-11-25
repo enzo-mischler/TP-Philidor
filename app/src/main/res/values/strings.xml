@@ -11,8 +11,15 @@
     <string name="surprenant">surprenant</string>
     <string name="nouvelle_partie">Nouvelle partie</string>
     <string name="historique_parties">Historique des parties</string>
-    <string name="couleur_choisie">Couleur : %1$s</string>
-    <string name="creativite_choisie">Créativité : %1$s</string>
+    <string name="camp_creativite">%1$s · créativité %2$s</string>
+    <string name="vous">Vous</string>
+    <string name="trait_blancs">Aux Blancs de jouer</string>
+    <string name="trait_noirs">Aux Noirs de jouer</string>
+    <string name="statut_echec">Échec ! %1$s</string>
+    <string name="statut_mat">Échec et mat</string>
+    <string name="statut_pat">Pat</string>
+    <string name="statut_nulle">Partie nulle</string>
+    <string name="numero_coup">%1$d.</string>
     <string name="historique">Historique</string>
     <string name="aucune_partie">Aucune partie jouée</string>
     <string name="lancer_partie">Lancez une partie depuis l\'accueil.</string>

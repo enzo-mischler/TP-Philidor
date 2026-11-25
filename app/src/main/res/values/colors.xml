@@ -6,5 +6,11 @@
     <color name="vert_clair">#E3F2EA</color>
     <color name="rouge">#C0392B</color>
     <color name="gris">#8A97A8</color>
+    <color name="gris_clair">#EEF1F4</color>
+    <color name="case_claire">#EEEED2</color>
+    <color name="case_foncée">#769656</color>
+    <color name="case_selection">#F7EC6E</color>
+    <color name="marque">#55000000</color>
+    <color name="dernier_coup">#99F7EC6E</color>
 
 </resources>

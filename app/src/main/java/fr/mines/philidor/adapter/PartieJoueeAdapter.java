@@ -1,4 +1,4 @@
-package fr.mines.philidor;
+package fr.mines.philidor.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,7 +12,9 @@ import androidx.core.content.ContextCompat;
 import java.text.DateFormat;
 import java.util.List;
 
+import fr.mines.philidor.R;
 import fr.mines.philidor.databinding.ItemPartieBinding;
+import fr.mines.philidor.model.PartieJouee;
 
 public class PartieJoueeAdapter extends ArrayAdapter<PartieJouee> {
 
